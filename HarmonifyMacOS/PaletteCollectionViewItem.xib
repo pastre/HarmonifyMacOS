@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PaletteCollectionViewItem" customModule="HarmonifyMacOS" customModuleProvider="target">
+            <connections>
+                <outlet property="nameLabel" destination="Izk-2Q-mJP" id="sJL-MS-iXE"/>
+                <outlet property="nameLabely" destination="eTG-Aa-odo" id="PEq-AG-1Fe"/>
+                <outlet property="rootView" destination="Hz6-mo-xeY" id="b1H-4V-XXI"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="B3X-Rg-3Nd"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="TLC-1o-BqR" customClass="PaletteCollectionViewItem" customModule="HarmonifyMacOS" customModuleProvider="target">
+            <connections>
+                <outlet property="nameLabel" destination="Izk-2Q-mJP" id="dxk-8K-Gk1"/>
+                <outlet property="stackView" destination="j80-sZ-e0z" id="7Zv-uA-FRA"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="Thj-4j-3OV"/>
+            </connections>
+        </customObject>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" borderType="none" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="8Hd-xX-Kld">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="140"/>
+                    <view key="contentView" id="FUd-Rg-zOo">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="140"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Izk-2Q-mJP">
+                                <rect key="frame" x="20" y="96" width="360" height="24"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" drawsBackground="YES" id="eTG-Aa-odo">
+                                    <font key="font" metaFont="system" size="20"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textFieldCell>
+                            </textField>
+                            <stackView autoresizesSubviews="NO" distribution="equalSpacing" orientation="horizontal" alignment="centerY" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j80-sZ-e0z">
+                                <rect key="frame" x="20" y="20" width="360" height="66"/>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Izk-2Q-mJP" firstAttribute="top" secondItem="FUd-Rg-zOo" secondAttribute="top" constant="20" id="15o-qp-sPh"/>
+                            <constraint firstItem="Izk-2Q-mJP" firstAttribute="leading" secondItem="FUd-Rg-zOo" secondAttribute="leading" constant="20" id="45S-UH-4Uy"/>
+                            <constraint firstItem="j80-sZ-e0z" firstAttribute="leading" secondItem="FUd-Rg-zOo" secondAttribute="leading" constant="20" id="7py-TX-d6E"/>
+                            <constraint firstAttribute="trailing" secondItem="j80-sZ-e0z" secondAttribute="trailing" constant="20" id="nGs-q3-kjp"/>
+                            <constraint firstItem="j80-sZ-e0z" firstAttribute="top" secondItem="Izk-2Q-mJP" secondAttribute="bottom" constant="10" id="oY9-Mq-kd2"/>
+                            <constraint firstAttribute="bottom" secondItem="j80-sZ-e0z" secondAttribute="bottom" constant="20" id="tcc-KD-hS6"/>
+                            <constraint firstAttribute="trailing" secondItem="Izk-2Q-mJP" secondAttribute="trailing" constant="20" id="zK2-58-bf9"/>
+                        </constraints>
+                    </view>
+                    <color key="fillColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8Hd-xX-Kld" secondAttribute="trailing" id="K8Y-Sh-uV9"/>
+                <constraint firstAttribute="bottom" secondItem="8Hd-xX-Kld" secondAttribute="bottom" id="iiw-Eq-jN1"/>
+                <constraint firstItem="8Hd-xX-Kld" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="nyD-zG-Pbe"/>
+                <constraint firstItem="8Hd-xX-Kld" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="uun-nz-ghh"/>
+            </constraints>
+        </customView>
+    </objects>
+</document>
