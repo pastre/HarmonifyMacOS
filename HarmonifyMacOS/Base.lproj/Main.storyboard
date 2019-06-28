@@ -814,18 +814,18 @@
                 </viewController>
                 <customObject id="APK-X7-Rcm" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="84" y="1077"/>
+            <point key="canvasLocation" x="75" y="978"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Zah-PF-RvP">
             <objects>
                 <viewController storyboardIdentifier="HelpViewController" id="K8z-su-Ppv" sceneMemberID="viewController">
                     <view key="view" id="fhx-Pg-ru5">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="88"/>
+                        <rect key="frame" x="0.0" y="0.0" width="298" height="88"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Lea-bY-F0i">
-                                <rect key="frame" x="8" y="10" width="434" height="68"/>
+                                <rect key="frame" x="8" y="10" width="282" height="68"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" id="kJH-bh-lBz">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <string key="title">Welcome to the Harmonify MacOS Extension
@@ -847,7 +847,7 @@
                 </viewController>
                 <customObject id="aIF-Py-gCI" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46" y="1327"/>
+            <point key="canvasLocation" x="90" y="1145"/>
         </scene>
     </scenes>
     <resources>
