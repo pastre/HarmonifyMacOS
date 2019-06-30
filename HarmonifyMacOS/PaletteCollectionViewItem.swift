@@ -8,12 +8,17 @@
 
 import Cocoa
 
+func loadColor(named: String) -> NSColor{
+    return NSColor(named: NSColor.Name(named))!
+}
+
 class PaletteCollectionViewItem: NSCollectionViewItem, BallViewDelegate {
 
     @IBOutlet weak var nameLabel: NSTextField!
     @IBOutlet weak var nameLabely: NSTextFieldCell!
     @IBOutlet var rootView: NSView!
     @IBOutlet weak var stackView: NSStackView!
+    @IBOutlet weak var boxView: NSBox!
     var palette: Palette!
     
     override func viewDidLoad() {
@@ -27,7 +32,15 @@ class PaletteCollectionViewItem: NSCollectionViewItem, BallViewDelegate {
         
     }
     
+
+    
     func setupPalette(){
+        let cardBg = loadColor(named: "paletteCellBackgroundColor")
+        let textColor = loadColor(named: "paletteNameTextColor")
+        
+        self.nameLabel.textColor = textColor
+        self.boxView.fillColor = cardBg
+        
         self.nameLabel.stringValue = palette.name
         while self.stackView.arrangedSubviews.count != 0{
             stackView.arrangedSubviews.first!.removeFromSuperview()

@@ -35,6 +35,8 @@ class ViewController: NSViewController, NSCollectionViewDelegate, NSCollectionVi
         NotificationCenter.default.addObserver(self, selector: #selector(self.onICloudUpdate(_:)), name: NSUbiquitousKeyValueStore.didChangeExternallyNotification, object: NSUbiquitousKeyValueStore.default)
         self.setupCollectinView()
         self.updatePalettesFromiCloud()
+        
+        
     }
 
     

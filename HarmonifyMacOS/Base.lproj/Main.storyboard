@@ -743,7 +743,6 @@
                                     <font key="font" metaFont="system"/>
                                     <segments>
                                         <segment label="Palettes"/>
-                                        <segment label="Colors" tag="1"/>
                                     </segments>
                                 </segmentedCell>
                             </segmentedControl>

@@ -17,6 +17,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="TLC-1o-BqR" customClass="PaletteCollectionViewItem" customModule="HarmonifyMacOS" customModuleProvider="target">
             <connections>
+                <outlet property="boxView" destination="8Hd-xX-Kld" id="omB-cU-HX6"/>
                 <outlet property="nameLabel" destination="Izk-2Q-mJP" id="dxk-8K-Gk1"/>
                 <outlet property="stackView" destination="j80-sZ-e0z" id="7Zv-uA-FRA"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="Thj-4j-3OV"/>
