@@ -746,6 +746,13 @@
                                     </segments>
                                 </segmentedCell>
                             </segmentedControl>
+                            <button hidden="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="m7r-FC-4Eg">
+                                <rect key="frame" x="124" y="339" width="173" height="18"/>
+                                <buttonCell key="cell" type="roundRect" title="An update is avaiable" bezelStyle="roundedRect" image="NSCaution" imagePosition="leading" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="sbQ-wI-7k2">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="cellTitle"/>
+                                </buttonCell>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="crH-1c-ccg" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="1vC-AF-lhM"/>
@@ -758,15 +765,19 @@
                             <constraint firstItem="aGh-nH-VD5" firstAttribute="leading" secondItem="puf-4O-uxS" secondAttribute="trailing" constant="30" id="QEe-Ni-fxj"/>
                             <constraint firstItem="S3f-s9-5LL" firstAttribute="top" secondItem="crH-1c-ccg" secondAttribute="bottom" constant="1" id="Ze7-2P-2qP"/>
                             <constraint firstItem="crH-1c-ccg" firstAttribute="top" secondItem="aGh-nH-VD5" secondAttribute="bottom" constant="20" id="ady-WC-JJS"/>
+                            <constraint firstItem="m7r-FC-4Eg" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="bnl-va-gh8"/>
+                            <constraint firstItem="aGh-nH-VD5" firstAttribute="top" secondItem="m7r-FC-4Eg" secondAttribute="bottom" constant="10" id="c3N-mb-8hE"/>
                             <constraint firstItem="drN-OD-GGn" firstAttribute="centerY" secondItem="puf-4O-uxS" secondAttribute="centerY" id="e0v-FW-yFz"/>
                             <constraint firstAttribute="bottom" secondItem="4jg-R9-ZQx" secondAttribute="bottom" id="fdm-Ur-98C"/>
                             <constraint firstItem="aGh-nH-VD5" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="30" id="g7G-lA-WyZ"/>
                             <constraint firstAttribute="trailing" secondItem="drN-OD-GGn" secondAttribute="trailing" constant="10" id="qyc-bX-cwS"/>
                             <constraint firstItem="aGh-nH-VD5" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="vsu-Ov-yWR"/>
+                            <constraint firstItem="m7r-FC-4Eg" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="3" id="wq4-Zx-FSH"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="palettesCollectionView" destination="S3f-s9-5LL" id="dhv-nS-UC4"/>
+                        <outlet property="updateWarningButton" destination="m7r-FC-4Eg" id="SoU-b0-0VZ"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -790,7 +801,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gWZ-EV-kAL">
-                                <rect key="frame" x="123" y="9" width="33" height="24"/>
+                                <rect key="frame" x="122.5" y="9" width="34" height="24"/>
                                 <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="clipboard" imagePosition="only" alignment="center" borderStyle="border" inset="2" id="uPo-wX-L4A">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -854,6 +865,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="NSCaution" width="32" height="32"/>
         <image name="NSExitFullScreenTemplate" width="15" height="15"/>
         <image name="clipboard" width="14" height="16"/>
     </resources>

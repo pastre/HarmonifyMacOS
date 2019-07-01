@@ -20,12 +20,16 @@ let kEXTENSION_CLEAR_LIST  = NSNotification.Name.init("\(kEXTENSION_BASE_KEY).cl
 let kEXTENSION_PALETTE_ADDED = NSNotification.Name.init("\(kEXTENSION_BASE_KEY).newPalette")
 let kEXTENSION_PALETTES = NSNotification.Name.init("\(kEXTENSION_BASE_KEY).palettes")
 
+let CURRENT_VERSION = "1.0.0"
+
 class ViewController: NSViewController, NSCollectionViewDelegate, NSCollectionViewDataSource {
     
     let PALETTE_CELL_IDENTIFIER = NSUserInterfaceItemIdentifier(rawValue: "paletteCell")
+    
+    @IBOutlet weak var updateWarningButton: NSButton!
     @IBOutlet weak var palettesCollectionView: NSCollectionView!
     
-    
+    var updateTimer: Timer!
     var palettes: [Palette]!
     
     override func viewDidLoad() {
@@ -35,10 +39,40 @@ class ViewController: NSViewController, NSCollectionViewDelegate, NSCollectionVi
         NotificationCenter.default.addObserver(self, selector: #selector(self.onICloudUpdate(_:)), name: NSUbiquitousKeyValueStore.didChangeExternallyNotification, object: NSUbiquitousKeyValueStore.default)
         self.setupCollectinView()
         self.updatePalettesFromiCloud()
-        
-        
+        self.setupUpdater()
+    }
+    
+    override func viewWillDisappear() {
+        self.updateTimer.invalidate()
     }
 
+    func setupUpdater(){
+        self.updateTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (_) in
+            
+            let url = URL(string: "https://pastre.github.io/harmonify/version.html")!
+            
+            let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+                guard let data = data else { return }
+                guard let str = String(data: data, encoding: .utf8) else { return }
+                if str != CURRENT_VERSION{
+                    DispatchQueue.main.async {
+                        
+                        self.onUpdateNeeded()
+                    }
+                }
+                print(Date(), " - Checked for update", str)
+            }
+            
+            task.resume()
+            
+        }
+        
+    }
+    
+    func onUpdateNeeded(){
+        self.updateWarningButton.isEnabled = true
+        self.updateWarningButton.isHidden = false
+    }
     
     
     func setupCollectinView(){
