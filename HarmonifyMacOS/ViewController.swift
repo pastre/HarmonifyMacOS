@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import Sparkle
 
 let HARMONIFY_BASE_KEY = "io.github.pastre.harmonify"
 let HARMONIFY_UBIQUITOUS_CLOUD_NAME = NSNotification.Name.init("io.github.pastre.harmonify")
@@ -22,7 +23,9 @@ let kEXTENSION_PALETTES = NSNotification.Name.init("\(kEXTENSION_BASE_KEY).palet
 
 let CURRENT_VERSION = "1.0.0"
 
-class ViewController: NSViewController, NSCollectionViewDelegate, NSCollectionViewDataSource {
+class ViewController: NSViewController, NSCollectionViewDelegate, NSCollectionViewDataSource, SUUpdaterDelegate {
+    
+//    SUUpdater.shared()?
     
     let PALETTE_CELL_IDENTIFIER = NSUserInterfaceItemIdentifier(rawValue: "paletteCell")
     
@@ -32,8 +35,15 @@ class ViewController: NSViewController, NSCollectionViewDelegate, NSCollectionVi
     var updateTimer: Timer!
     var palettes: [Palette]!
     
+    func updater(_ updater: SUUpdater, didFinishLoading appcast: SUAppcast) {
+        print("Carregou o appcast!!!", appcast)
+    }
+    
     override func viewDidLoad() {
         
+        SUUpdater.shared()?.automaticallyChecksForUpdates = true
+        SUUpdater.shared()!.checkForUpdates(self)
+        SUUpdater.shared()?.delegate = self
         super.viewDidLoad()
         // COMECA A OUVIR DO ICLOUD PARA BUSCAR DADOS
         NotificationCenter.default.addObserver(self, selector: #selector(self.onICloudUpdate(_:)), name: NSUbiquitousKeyValueStore.didChangeExternallyNotification, object: NSUbiquitousKeyValueStore.default)

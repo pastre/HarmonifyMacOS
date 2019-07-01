@@ -676,6 +676,7 @@
                 </application>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="HarmonifyMacOS" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="Q8d-eP-8Ue" customClass="SUUpdater"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
@@ -801,7 +802,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gWZ-EV-kAL">
-                                <rect key="frame" x="122.5" y="9" width="34" height="24"/>
+                                <rect key="frame" x="123" y="9" width="33" height="24"/>
                                 <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="clipboard" imagePosition="only" alignment="center" borderStyle="border" inset="2" id="uPo-wX-L4A">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
