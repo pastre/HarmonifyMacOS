@@ -13,6 +13,7 @@
 		D77781CE22C13B360059B8EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77781CC22C13B360059B8EC /* Main.storyboard */; };
 		D793A1C422C27D7C0020DE50 /* PaletteCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D793A1C222C27D7C0020DE50 /* PaletteCollectionViewItem.swift */; };
 		D793A1C522C27D7C0020DE50 /* PaletteCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D793A1C322C27D7C0020DE50 /* PaletteCollectionViewItem.xib */; };
+		D7C2AA7022CB964600DA8092 /* HelpPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C2AA6F22CB964600DA8092 /* HelpPanelViewController.swift */; };
 		D7D4158F22C1722C00901D4F /* Serialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D4158B22C1722C00901D4F /* Serialize.swift */; };
 		D7D4159022C1722C00901D4F /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D4158C22C1722C00901D4F /* Palette.swift */; };
 		D7D4159122C1722C00901D4F /* RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D4158D22C1722C00901D4F /* RGBA.swift */; };
@@ -26,7 +27,7 @@
 		1F56D554F507224606582C94 /* Pods-HarmonifyMacOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarmonifyMacOS.release.xcconfig"; path = "Target Support Files/Pods-HarmonifyMacOS/Pods-HarmonifyMacOS.release.xcconfig"; sourceTree = "<group>"; };
 		3CA507EFFD1D27757E6909DF /* Pods-HarmonifyMacOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HarmonifyMacOS.debug.xcconfig"; path = "Target Support Files/Pods-HarmonifyMacOS/Pods-HarmonifyMacOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D07EE13AD3275A28AC5999DA /* Pods_HarmonifyMacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HarmonifyMacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D77781C322C13B340059B8EC /* HarmonifyMacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HarmonifyMacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D77781C322C13B340059B8EC /* Easy Color Picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy Color Picker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77781C622C13B340059B8EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D77781C822C13B340059B8EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D77781CA22C13B360059B8EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,6 +36,7 @@
 		D77781D022C13B360059B8EC /* HarmonifyMacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HarmonifyMacOS.entitlements; sourceTree = "<group>"; };
 		D793A1C222C27D7C0020DE50 /* PaletteCollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteCollectionViewItem.swift; sourceTree = "<group>"; };
 		D793A1C322C27D7C0020DE50 /* PaletteCollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaletteCollectionViewItem.xib; sourceTree = "<group>"; };
+		D7C2AA6F22CB964600DA8092 /* HelpPanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpPanelViewController.swift; sourceTree = "<group>"; };
 		D7D4158B22C1722C00901D4F /* Serialize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serialize.swift; sourceTree = "<group>"; };
 		D7D4158C22C1722C00901D4F /* Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		D7D4158D22C1722C00901D4F /* RGBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBA.swift; sourceTree = "<group>"; };
@@ -77,7 +79,7 @@
 		D77781C422C13B340059B8EC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D77781C322C13B340059B8EC /* HarmonifyMacOS.app */,
+				D77781C322C13B340059B8EC /* Easy Color Picker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +97,7 @@
 				D793A1C222C27D7C0020DE50 /* PaletteCollectionViewItem.swift */,
 				D793A1C322C27D7C0020DE50 /* PaletteCollectionViewItem.xib */,
 				D7E4D25822C59116009FC520 /* ColorDetailViewController.swift */,
+				D7C2AA6F22CB964600DA8092 /* HelpPanelViewController.swift */,
 			);
 			path = HarmonifyMacOS;
 			sourceTree = "<group>";
@@ -123,9 +126,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D77781C222C13B340059B8EC /* HarmonifyMacOS */ = {
+		D77781C222C13B340059B8EC /* Easy Color Picker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D77781D322C13B360059B8EC /* Build configuration list for PBXNativeTarget "HarmonifyMacOS" */;
+			buildConfigurationList = D77781D322C13B360059B8EC /* Build configuration list for PBXNativeTarget "Easy Color Picker" */;
 			buildPhases = (
 				CCACAA35E7D36BE0815E6918 /* [CP] Check Pods Manifest.lock */,
 				D77781BF22C13B340059B8EC /* Sources */,
@@ -138,9 +141,9 @@
 			);
 			dependencies = (
 			);
-			name = HarmonifyMacOS;
+			name = "Easy Color Picker";
 			productName = HarmonifyMacOS;
-			productReference = D77781C322C13B340059B8EC /* HarmonifyMacOS.app */;
+			productReference = D77781C322C13B340059B8EC /* Easy Color Picker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -182,7 +185,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D77781C222C13B340059B8EC /* HarmonifyMacOS */,
+				D77781C222C13B340059B8EC /* Easy Color Picker */,
 			);
 		};
 /* End PBXProject section */
@@ -274,6 +277,7 @@
 			files = (
 				D7E4D25922C59116009FC520 /* ColorDetailViewController.swift in Sources */,
 				D7D4158F22C1722C00901D4F /* Serialize.swift in Sources */,
+				D7C2AA7022CB964600DA8092 /* HelpPanelViewController.swift in Sources */,
 				D7D4159122C1722C00901D4F /* RGBA.swift in Sources */,
 				D77781C922C13B340059B8EC /* ViewController.swift in Sources */,
 				D793A1C422C27D7C0020DE50 /* PaletteCollectionViewItem.swift in Sources */,
@@ -471,7 +475,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D77781D322C13B360059B8EC /* Build configuration list for PBXNativeTarget "HarmonifyMacOS" */ = {
+		D77781D322C13B360059B8EC /* Build configuration list for PBXNativeTarget "Easy Color Picker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D77781D422C13B360059B8EC /* Debug */,

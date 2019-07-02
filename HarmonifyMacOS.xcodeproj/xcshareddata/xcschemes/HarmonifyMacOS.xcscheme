@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D77781C222C13B340059B8EC"
-               BuildableName = "HarmonifyMacOS.app"
-               BlueprintName = "HarmonifyMacOS"
+               BuildableName = "Easy Color Picker.app"
+               BlueprintName = "Easy Color Picker"
                ReferencedContainer = "container:HarmonifyMacOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D77781C222C13B340059B8EC"
-            BuildableName = "HarmonifyMacOS.app"
-            BlueprintName = "HarmonifyMacOS"
+            BuildableName = "Easy Color Picker.app"
+            BlueprintName = "Easy Color Picker"
             ReferencedContainer = "container:HarmonifyMacOS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D77781C222C13B340059B8EC"
-            BuildableName = "HarmonifyMacOS.app"
-            BlueprintName = "HarmonifyMacOS"
+            BuildableName = "Easy Color Picker.app"
+            BlueprintName = "Easy Color Picker"
             ReferencedContainer = "container:HarmonifyMacOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D77781C222C13B340059B8EC"
-            BuildableName = "HarmonifyMacOS.app"
-            BlueprintName = "HarmonifyMacOS"
+            BuildableName = "Easy Color Picker.app"
+            BlueprintName = "Easy Color Picker"
             ReferencedContainer = "container:HarmonifyMacOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
